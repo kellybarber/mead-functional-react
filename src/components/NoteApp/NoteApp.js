@@ -1,17 +1,22 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { componentStyle, inputStyle, buttonStyle } from 'Styles/base'
+
+const notesData = JSON.parse(localStorage.getItem('notes'))
 
 export default () => {
   const [ title, setTitle ] = useState('')
   const [ body, setBody ]   = useState('')
-  const [ notes, setNotes ] = useState([])
+  const [ notes, setNotes ] = useState(notesData || [])
+
+  useEffect(() => {
+    const notesString = JSON.stringify(notes)
+    localStorage.setItem('notes', notesString)
+  })
 
   const addNote = e => {
     e.preventDefault()
-    setNotes([ ...notes, {
-      title,
-      body
-    }])
+    setNotes([ ...notes, { title, body }])
+
     setTitle('')
     setBody('')
   }

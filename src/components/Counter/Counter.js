@@ -1,9 +1,13 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { componentStyle, inputStyle, buttonStyle } from 'Styles/base'
 
 export default ({ initialCount = 0 }) => {
   const [ count, setCount ] = useState(initialCount)
   const [ text, setText]    = useState('count')
+
+  useEffect(() => {
+    document.title = `Count: ${count}`
+  })
 
   return (
     <div style={ componentStyle }>
