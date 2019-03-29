@@ -1,14 +1,14 @@
 import React, { useState } from 'react'
 
+const buttonStyle = {
+  margin       : '0 20px',
+  padding      : '10px',
+  borderRadius : '5px',
+  cursor       : 'pointer'
+}
+
 export default ({ initialCount = 0 }) => {
   const [ count, setCount ] = useState(initialCount)
-
-  const buttonStyle = {
-    margin       : '0 20px',
-    padding      : '10px',
-    borderRadius : '5px',
-    cursor       : 'pointer'
-  }
 
   return (
     <div>

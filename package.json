@@ -1,7 +1,7 @@
 {
-  "name": "react-minimal-boilerplate",
+  "name": "mead-functional-react",
   "version": "1.0.0",
-  "description": "A simple react boilerplate with babel and webpack",
+  "description": "Andrew Mead react new section course",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --config config/webpack.dev.js --hot",

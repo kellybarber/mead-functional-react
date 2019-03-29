@@ -5,10 +5,8 @@ import Home from '../sections/Home/Home'
 
 export default () => (
   <BrowserRouter>
-    <div class='app-container'>
-      <Switch>
-        <Route path='/' component={Home}/>
-      </Switch>
-    </div>
+    <Switch>
+      <Route path='/' component={Home}/>
+    </Switch>
   </BrowserRouter>
 )
