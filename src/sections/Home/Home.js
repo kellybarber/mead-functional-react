@@ -1,6 +1,14 @@
 import React from 'react'
-import Counter from '../../components/Counter/Counter';
+import NoteApp from 'Components/NoteApp/NoteApp'
+import Counter from 'Components/Counter/Counter'
 
 export default () => (
-  <Counter/>
+  <div style={sectionStyle}>
+    <NoteApp/>
+    <Counter/>
+  </div>
 )
+
+const sectionStyle = {
+  padding : '20px'
+}

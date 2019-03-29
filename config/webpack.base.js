@@ -30,8 +30,8 @@ module.exports = {
   ],
   resolve: {
     alias : {
-      Sections   : path.resolve(__dirname, 'src/sections'),
-      Components : path.resolve(__dirname, 'src/components')
+      Sections   : path.resolve(__dirname, '../src/sections'),
+      Components : path.resolve(__dirname, '../src/components')
     },
     extensions: [ '*', '.js', '.css', '.scss' ]
   },
