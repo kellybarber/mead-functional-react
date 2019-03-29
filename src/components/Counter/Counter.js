@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { componentStyle, inputStyle, buttonStyle } from 'Styles/base'
 
 export default ({ initialCount = 0 }) => {
   const [ count, setCount ] = useState(initialCount)
@@ -26,31 +27,8 @@ export default ({ initialCount = 0 }) => {
 }
 
 // Styles
-const componentStyle = {
-  display       : 'flex',
-  flexDirection : 'column',
-  alignItems    : 'center',
-  margin        : '50px 0',
-  padding       : '20px 0',
-  border        : '1px solid black',
-  borderRadius  : '5px',
-}
-
 const buttonContainerStyle = {
   display        : 'flex',
   justifyContent : 'space-between',
   width          : '342px',
-}
-
-const buttonStyle = {
-  padding      : '10px',
-  borderRadius : '5px',
-  cursor       : 'pointer'
-}
-
-const inputStyle = {
-  width        : '320px',
-  margin       : '20px 0',
-  padding      : '10px',
-  borderRadius : '5px',
 }
