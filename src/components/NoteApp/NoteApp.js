@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import Note from 'Components/Note/Note'
 import { componentStyle, inputStyle, buttonStyle } from 'Styles/base'
 
 export default () => {
@@ -28,22 +29,11 @@ export default () => {
     setNotes(notes.filter(note => note.title !== title))
   }
 
-  const renderNote = note => (
-    <div style={ noteStyle } key={note.title}>
-      <h3 style={{ wordBreak : 'break-all' }}>{ note.title }</h3>
-      <p style={{ wordBreak : 'break-all' }}>{ note.body }</p>
-      <button
-        style={ removeButtonStyle }
-        onClick={() => removeNote(note.title)}
-      >&times;</button>
-    </div>
-  )
-
   return (
     <div style={componentStyle}>
       <h1>Notes</h1>
       <div style={ notesContainerStyle }>
-        { notes.map(note => renderNote(note) )}
+        { notes.map(note => <Note note={note} removeNote={removeNote} key={note.title} /> )}
       </div>
       <p style={{ margin : '0' }}>Add Note:</p>
       <form style={ formStyle } onSubmit={addNote}>
@@ -74,24 +64,6 @@ const notesContainerStyle = {
   gridGap             : '20px',
   maxWidth            : '800px',
   margin              : '0 0 20px'
-}
-
-const noteStyle = {
-  position        : 'relative',
-  maxWidth        : '100px',
-  padding         : '10px 30px',
-  backgroundColor : '#FFFF99'
-}
-
-const removeButtonStyle = {
-  position   : 'absolute',
-  top        : '-2px',
-  right      : '0',
-  fontSize   : '1.4em',
-  cursor     : 'pointer',
-  background : 'none',
-  border     : 'none',
-  outline    : 'none'
 }
 
 const formStyle = {

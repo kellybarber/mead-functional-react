@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9249343-bcd4-496f-ba91-b796d8dd3010" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Note/Note.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/NoteApp/NoteApp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NoteApp/NoteApp.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -42,11 +44,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/NoteApp/NoteApp.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="1" column="69" selection-start-line="1" selection-start-column="69" selection-end-line="1" selection-end-column="69" />
+            <state relative-caret-position="355">
+              <caret line="35" column="86" lean-forward="true" selection-start-line="35" selection-start-column="86" selection-end-line="35" selection-end-column="86" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Note/Note.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="4" column="41" lean-forward="true" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -70,6 +81,7 @@
         <option value="$PROJECT_DIR$/config/webpack.base.js" />
         <option value="$PROJECT_DIR$/src/styles/base.js" />
         <option value="$PROJECT_DIR$/src/components/Counter/Counter.js" />
+        <option value="$PROJECT_DIR$/src/components/Note/Note.js" />
         <option value="$PROJECT_DIR$/src/components/NoteApp/NoteApp.js" />
       </list>
     </option>
@@ -95,11 +107,6 @@
             <path>
               <item name="mead-functional-react" type="b2602c69:ProjectViewProjectNode" />
               <item name="mead-functional-react" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mead-functional-react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mead-functional-react" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -120,7 +127,7 @@
               <item name="mead-functional-react" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="NoteApp" type="462c0819:PsiDirectoryNode" />
+              <item name="Note" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mead-functional-react" type="b2602c69:ProjectViewProjectNode" />
@@ -190,12 +197,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1553740269020</updated>
-      <workItem from="1553740270288" duration="11960000" />
+      <workItem from="1553740270288" duration="12796000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11960000" />
+    <option name="totallyTimeSpent" value="12796000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
@@ -307,10 +314,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Note/Note.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="41" lean-forward="true" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/NoteApp/NoteApp.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="69" selection-start-line="1" selection-start-column="69" selection-end-line="1" selection-end-column="69" />
+        <state relative-caret-position="355">
+          <caret line="35" column="86" lean-forward="true" selection-start-line="35" selection-start-column="86" selection-end-line="35" selection-end-column="86" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
