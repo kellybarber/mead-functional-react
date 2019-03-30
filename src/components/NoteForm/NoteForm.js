@@ -17,22 +17,25 @@ export default () => {
   }
 
   return (
-    <form style={formStyle} onSubmit={addNote}>
-      <input
-        required
-        style={inputStyle}
-        placeholder={'Title'}
-        value={title}
-        onChange={e => setTitle(e.target.value)}
-      />
-      <textarea
-        style={{...inputStyle, marginTop: '0'}}
-        placeholder={'Body'}
-        value={body}
-        onChange={e => setBody(e.target.value)}
-      />
-      <button style={buttonStyle}>Add Note</button>
-    </form>
+    <React.Fragment>
+      <p style={{ margin : '0' }}>Add Note:</p>
+      <form style={formStyle} onSubmit={addNote}>
+        <input
+          required
+          style={inputStyle}
+          placeholder={'Title'}
+          value={title}
+          onChange={e => setTitle(e.target.value)}
+        />
+        <textarea
+          style={{...inputStyle, marginTop: '0'}}
+          placeholder={'Body'}
+          value={body}
+          onChange={e => setBody(e.target.value)}
+        />
+        <button style={buttonStyle}>Add Note</button>
+      </form>
+    </React.Fragment>
   )
 }
 

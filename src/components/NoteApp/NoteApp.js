@@ -24,7 +24,6 @@ export default () => {
       <div style={componentStyle}>
         <h1>Notes</h1>
         <NoteList/>
-        <p style={{ margin : '0' }}>Add Note:</p>
         <NoteForm/>
       </div>
     </NotesContext.Provider>

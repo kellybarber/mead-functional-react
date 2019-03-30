@@ -1,8 +1,10 @@
 import React, { useContext } from 'react'
 import NotesContext from 'Context/notes-context'
+import useMousePosition from 'Hooks/useMousePosition'
 
 export default ({ note }) => {
   const { dispatch } = useContext(NotesContext)
+  const position     = useMousePosition()
 
   const removeNote = title => dispatch({ type : 'REMOVE_NOTE', title })
 
@@ -10,6 +12,7 @@ export default ({ note }) => {
     <div style={noteStyle}>
       <h3 style={{wordBreak: 'break-all'}}>{note.title}</h3>
       <p style={{wordBreak: 'break-all'}}>{note.body}</p>
+      <p>{position.x}, {position.y}</p>
       <button
         style={removeButtonStyle}
         onClick={() => removeNote(note.title)}
