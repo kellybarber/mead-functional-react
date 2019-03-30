@@ -33,6 +33,7 @@ module.exports = {
       Sections   : path.resolve(__dirname, '../src/sections'),
       Components : path.resolve(__dirname, '../src/components'),
       Reducers   : path.resolve(__dirname, '../src/reducers'),
+      Context    : path.resolve(__dirname, '../src/context'),
       Styles     : path.resolve(__dirname, '../src/styles')
     },
     extensions: [ '*', '.js', '.css', '.scss' ]

@@ -1,15 +1,22 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import NotesContext from 'Context/notes-context'
 
-export default ({ note, removeNote }) => (
-  <div style={ noteStyle }>
-    <h3 style={{ wordBreak : 'break-all' }}>{ note.title }</h3>
-    <p style={{ wordBreak : 'break-all' }}>{ note.body }</p>
-    <button
-      style={ removeButtonStyle }
-      onClick={() => removeNote(note.title)}
-    >&times;</button>
-  </div>
-)
+export default ({ note }) => {
+  const { dispatch } = useContext(NotesContext)
+
+  const removeNote = title => dispatch({ type : 'REMOVE_NOTE', title })
+
+  return (
+    <div style={noteStyle}>
+      <h3 style={{wordBreak: 'break-all'}}>{note.title}</h3>
+      <p style={{wordBreak: 'break-all'}}>{note.body}</p>
+      <button
+        style={removeButtonStyle}
+        onClick={() => removeNote(note.title)}
+      >&times;</button>
+    </div>
+  )
+}
 
 // Styles
 const noteStyle = {

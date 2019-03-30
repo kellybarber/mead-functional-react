@@ -1,7 +1,10 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import { inputStyle, buttonStyle } from 'Styles/base'
 
-export default ({ dispatch }) => {
+import NotesContext from 'Context/notes-context'
+
+export default () => {
+  const { dispatch }        = useContext(NotesContext)
   const [ title, setTitle ] = useState('')
   const [ body, setBody ]   = useState('')
 
